@@ -1,1 +1,1 @@
-[MoGo](https://leonidvlasov.github.io/template-mogo/)
+[MoGo](https://leonidvlasov.github.io/template-mogo/index.html)
