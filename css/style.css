@@ -107,7 +107,7 @@ a:hover {
 
 .navigation {
 	display: flex;
-	width: 55%;
+	width: 50%;
 }
 
 .nav__container {
@@ -159,7 +159,8 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 3rem;
+	align-self: center;
+	margin: auto;
 }
 
 .welcome__mission {
@@ -1016,7 +1017,7 @@ footer {
 }
 
 .footer__column--3 {
-	width: 23%;
+	width: 20%;
 }
 
 .footer__about {
@@ -1044,7 +1045,14 @@ footer {
 
 .footer__icons {
 	height: 2rem;
-	width: 1.8rem;
+	width: 2rem;
+	background-position: center;
+}
+
+.footer__icons:hover {
+	transform: scale(2,2);
+	transition-timing-function: ease-out;
+	transition-duration: 1s;
 }
 
 .socials__icons {
@@ -1059,7 +1067,6 @@ footer {
 
 .footer__icons--fb {
 	background-image: url(../images/footer-pics/icons/fb.png);
-	width: 0.7rem;
 }
 .footer__icons--twit {
 	background-image: url(../images/footer-pics/icons/twitter.png);
@@ -1096,7 +1103,7 @@ footer {
 .footer__input {
 	font-family: 'Roboto';
 	font-size: 1.4rem;
-	color: #dcdcdc;
+	color: #000;
 	font-style: italic;
 }
 
@@ -1112,8 +1119,8 @@ footer {
 
 .footer__btn:hover {
 	background-color: #95e1d3;
-	color: #333;
-	border-color: #95e1d3;
+	color: #f38181;
+	border-color: #dcdcdc;
 }
 
 	/* column two */
@@ -1166,8 +1173,18 @@ time {
 }
 
 .footer__instagram img {
-	padding: 0.3rem;
+	padding: 0.1rem;
+	width: 33%;
+	height: 33%;
 }
+
+.footer__blog-part img:hover,
+.footer__instagram img:hover {
+	transform: scale(1.1,1.1);
+	transition-timing-function: ease-out;
+	transition-duration: 1s;
+}
+
 
 .more-foto {
 	font-family: 'Roboto';
@@ -1190,6 +1207,10 @@ time {
 	padding: 2rem 0;
 }
 
-.footer__sign span {
+.footer__sign a {
 	color: #f38181;
+}
+
+.footer__sign a:hover {
+	color: #95e1d3;
 }
