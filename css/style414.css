@@ -1,0 +1,60 @@
+@media screen and (max-width: 414px) {
+
+	.section {
+		padding: 1.5rem 0;
+	}
+	
+	.gallery-hoverffect {
+		flex-direction: column;
+		padding: 3rem 0;
+	}
+
+	.gallery-hoverffect__item {
+		width: 100%;
+		margin-bottom: 1.5rem; 
+	}
+
+	.gallery-hoverffect__item--margined {
+		margin-left: 0;
+		margin-right: 0; 
+	}
+
+	.achivments__numbers {
+		font-size: 3rem;
+	}
+
+	.achivments__text {
+		font-size: 1rem;
+	}
+
+	.container__list-of {
+		flex-direction: column;
+	}
+
+	.list-of {
+		padding:0;
+		width: 100%;
+	}
+
+	.list-of__cluster {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.no-onmobile {
+		display: none;
+	}
+
+	.services {
+		padding: 3rem 0;
+	}
+
+	.partners a {
+		width: 50%;
+	}
+
+	.list-of__cluster img {
+		display: none;
+	}
+
+}
