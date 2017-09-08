@@ -1,5 +1,12 @@
 @media screen and (max-width: 768px) {
 
+	h5 {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
 	.standart-width,
 	.result__container {
 		width: 95%;
@@ -42,10 +49,6 @@
 		font-size: 5.5rem;
 	}
 
-	.list__backgrounds {
-		display: none;
-	}
-
 	.gallery-hoverffect__item {
 		display: block;
 		width: 100%;
@@ -78,6 +81,14 @@
 
 	.img-in-img__iphone {
 		display: none;
+	}
+
+	.list__part {
+		font-size: 1rem;
+	}
+
+	.part__numbers {
+		font-size: 1.3rem;
 	}
 
 	.result__container {
@@ -314,16 +325,10 @@
 		padding: 0;
 	}
 
-	.logo__name--grey,
-	h5 {
+	.logo__name--grey {
 		text-align: center;
 	}
 
-	h5 {
-		font-size: 3rem;
-		font-weight: 600;
-		margin: 0;
-	}
 
 	.gallery-hoverffect--ontab {
 		flex-direction: column;
@@ -332,6 +337,21 @@
 	.gallery-hoverffect__item:nth-child(2) {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	
+	.gallery-hoverffect {
+		justify-content: space-between;
+	}
+
+	.tablet-keyb,
+	.workspace-corner,
+	.workspace-flower {
+		width: 32%;
+	}
+
+	.tablet-keyb,
+	.workspace-corner {
+		margin-right: 0.5rem;
 	}
 
 
@@ -393,8 +413,4 @@
 	.logo__name--grey:hover {
 		color: #ccc;
 	}
-	
-	/**/
-
-
 }	

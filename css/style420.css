@@ -1,4 +1,36 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 420px) {
+
+	h1 {
+		margin: 0.5rem 0;
+	}
+
+	.head {
+		padding: 1rem 0;
+	}
+
+	.welcome {
+		margin-top: 3rem;
+	}
+
+	.welcome__tomogo {
+		font-size: 3rem;
+	}
+
+	.welcome__tomogo:after {
+		margin: 1rem auto;
+	}
+
+	.welcome__mission {
+		font-size: 2rem;
+	}
+
+	.button__link {
+		font-size: 1rem;
+	}
+
+	.list__backgrounds {
+		display: none;
+	}
 
 	.section {
 		padding: 1.5rem 0;

@@ -15,6 +15,30 @@ a:hover {
 	text-decoration: none;
 }
 
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 7rem;
+	background-color: #f8f8f8;
+}
+
+time {
+	font-family: 'Roboto';
+	font-size: 1.3rem;
+	color: #dcdcdc;
+	font-style: italic;
+	margin-top: 0.5rem;
+}
+
+h5 {
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+}
+
 .standart-width {
 	width: 80%;
 }
@@ -66,12 +90,11 @@ a:hover {
 	text-align: center;
 }
 
-/* head */
-
 	/* header */
 
 .head {
 	height: 100vh;
+	min-height: 50rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -987,14 +1010,6 @@ a:hover {
 
 /* page ten - footer */
 
-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 7rem;
-	background-color: #f8f8f8;
-}
-
 .footer__wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -1132,14 +1147,6 @@ footer {
 
 	/* column two */
 
-h5 {
-	font-family: 'Montserrat';
-	font-weight: 600;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	padding-bottom: 2rem;
-}
-
 .footer__blog-part {
 	display: flex;
 	padding: 1.5rem 0;
@@ -1163,13 +1170,6 @@ h5 {
 	text-transform: uppercase;
 }
 
-time {
-	font-family: 'Roboto';
-	font-size: 1.3rem;
-	color: #dcdcdc;
-	font-style: italic;
-	margin-top: 0.5rem;
-}
 
 	/* column three*/
 
