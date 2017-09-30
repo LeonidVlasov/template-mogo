@@ -403,7 +403,7 @@ h5 {
 }
 
 .result__achivments:first-child {
-	border-left: 1rem solid #b5eae0;
+	border-left: 0.1rem solid #b5eae0;
 }
 
 .achivments__numbers {
