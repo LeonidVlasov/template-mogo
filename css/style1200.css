@@ -1266,9 +1266,9 @@ h5 {
 	transform-origin: 0;
 }
 
-.slide-1 {
+/* .slide-1 {
 	width: 100%;
-}
+} */
 
 .slick-prev  {
 	left: -75px;
@@ -1287,4 +1287,15 @@ h5 {
 
 	.slick-prev:hover .slick-arrow {
 	background: #000;
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+	color: #f8f8f8;
+	background: inherit;
+	/* background: url('../images/fifthpage-pics/icons/carrouselarrow-right.png') no-repeat center center; */
+	outline: inherit;
+
 }
