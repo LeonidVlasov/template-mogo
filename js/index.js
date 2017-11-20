@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-     $("a").click(function () {
+     $(".nav__link").click(function () {
          $('html, body').animate({
              scrollTop: $($(this).attr('href')).offset().top
          }, 3000);
@@ -17,19 +17,15 @@ $(document).ready(function () {
     });
 
     $('.quote__container').slick({
-        fade: true,
-        // arrows: false,
-
-        // speed: 1000,
-        // infinite: true,
-        // autoplay: true,
-        // dots: false,
-        // arrows: true,
+        autoplay: true,
+        speed: 1000,
     });
 
-
-
-
+    $('.quote__container--fade').slick({
+        fade: true,
+        autoplay: true,
+        speed: 1000,
+    });
 
     $(".toggle").click(function () {
         $(".down").toggleClass('downstart');

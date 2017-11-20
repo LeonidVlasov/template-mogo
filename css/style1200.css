@@ -106,7 +106,7 @@ h5 {
 }
 
 .item--1{
-	background: url(../images/bg-sliders-pics/gavno.jpg) 50% 50%;
+	background: url(../images/bg-sliders-pics/eagle.jpg) 50% 50%;
 	background-size: cover;
 }
 
@@ -624,6 +624,19 @@ h5 {
 	width: 100%;
 }
 
+.quote__img-box {
+	height: 21rem;
+	width: 21rem;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.img-fitted {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
 .quote__pic-cont {
 	height: 100%;
 	display: flex;
@@ -643,6 +656,7 @@ h5 {
 	margin-left: 5rem;
 	padding: 0;
 	width: 80%;
+	
 }
 
 .text-container__text {
@@ -879,7 +893,8 @@ h5 {
 	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
- 	z-index: 99;
+	 z-index: 99;
+	 text-align: center;
 }
 
 .big-gallery__foto-block:hover .foto-block__text {
@@ -1247,10 +1262,10 @@ h5 {
 	display: none;
 	cursor: pointer;
 	position: fixed;
-	top: 2%;
-	right: 2%;
+	top: 3%;
+	right: 3%;
 	z-index: 3;
-	transform: translate(-2%, -2%);
+	transform: translate(-3%, -3%);
 }
 
 .toggle__item {
@@ -1285,17 +1300,12 @@ h5 {
 	content: '';
 }
 
-	.slick-prev:hover .slick-arrow {
-	background: #000;
+.slick-next:focus,
+.slick-next:hover {
+	background: url('../images/fifthpage-pics/icons/carrouselarrow-right.png') no-repeat center center;
 }
 
-.slick-next:focus,
-.slick-next:hover,
 .slick-prev:focus,
 .slick-prev:hover {
-	color: #f8f8f8;
-	background: inherit;
-	/* background: url('../images/fifthpage-pics/icons/carrouselarrow-right.png') no-repeat center center; */
-	outline: inherit;
-
+	background: url('../images/fifthpage-pics/icons/carrouselarrow-left.png') no-repeat center center;
 }
