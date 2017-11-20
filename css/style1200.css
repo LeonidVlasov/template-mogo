@@ -54,7 +54,7 @@ h5 {
 .page-title {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	text-align: center;
 } 
 
 .page-title__header {
@@ -91,20 +91,46 @@ h5 {
 }
 
 	/* header */
+.top-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.top-slider__item {
+	height: 100vh;
+	width: 100vw;
+}
+
+.item--1{
+	background: url(../images/bg-sliders-pics/eagle.jpg) 50% 50%;
+	background-size: cover;
+}
+
+.item--2 {
+	background: url(../images/bg-sliders-pics/deer.jpg) 50% 50%;
+	background-size: cover;
+}
+
+.item--3 {
+	background: url(../images/bg-sliders-pics/elephant.jpg) 50% 50%;
+	background-size: cover;
+}
 
 .head {
 	height: 100vh;
-	min-height: 50rem;
+	min-height: 60rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../images/backgrounds/top-background.png);
-	background-size: cover;
-	background-position: center;
 	padding: 2rem 0;
 	color: #fff;
+	background: linear-gradient(to bottom, rgba(243, 129, 129, 0.6), rgba(252, 227, 138, 0.6));
 }
 
 .head__header {
@@ -116,6 +142,11 @@ h5 {
 
 .head__link {
 	width: 50%;	
+}
+
+.head__icons {
+	display: flex;
+	margin-right: 5rem;
 }
 
 .logo__name {
@@ -131,6 +162,7 @@ h5 {
 
 .navigation {
 	display: flex;
+	text-align: center;
 }
 
 .nav__container {
@@ -146,7 +178,7 @@ h5 {
 	font-size: 1.4rem;
 	text-transform: uppercase;
 	color: #fff;
-	margin: 0 1.5rem;
+	margin: 0 2.5rem;
 	padding-bottom: 1rem;
 }
 
@@ -155,25 +187,18 @@ h5 {
 	border-bottom: 0.2rem solid #fce38a;
 }
 
-.head__icons {
-	display: flex;
+.icons__link {
+	color: #fff;
+	padding-bottom: 1rem;
 }
 
-.icons__pic {
-	display: block;
-	height: 1.9rem;
-	width: 1.9rem;
-	margin: 0 1.5rem;
-	background-repeat: no-repeat;
-	background-position: center;
+.icons__link:hover {
+	color: #fce38a;
+	border-bottom: 0.2rem solid #fce38a;
 }
 
-.icons__pic--cart {
-	background-image: url(../images/header/icons/cart.png);
-}
-
-.icons__pic--search {
-	background-image: url(../images/header/icons/search.png);
+.icons__link--chart {
+	margin: 0 5rem 0 3rem;
 }
 
 	/* welcome */
@@ -589,52 +614,44 @@ h5 {
 
 .quote__container {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.quote__left-ar,
-.quote__right-ar {
-	height: 2rem;
-	width: 2rem;
-}
-
-.quote__left-ar {
-	background-image: url(../images/fifthpage-pics/icons/carrouselarrow-left.png);
-}
-
-.quote__right-ar {
-	background-image: url(../images/fifthpage-pics/icons/carrouselarrow-right.png);
+	justify-content: space-around;
+	width: 70%;
 }
 
 .quote__block {
 	display: flex;
-	width: 85%;
+	align-items: center;
+	width: 100%;
 }
 
 .quote__pic-cont {
-	margin: auto;
-	padding: 3rem;
-	border: 0.2rem solid #95e1d3;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.quote__sign {
-	height: 6rem;
-	width: 6.1rem;
-	background-image: url(../images/fifthpage-pics/icons/speech4.png);
+.fa-comments {
+	font-size: 7rem;
+	color: #95e1d3;
+	border: 0.2rem solid #95e1d3;
+	padding: 3rem;
 }
 
 .quote__text-container  {
 	display: inline-block;
-	padding-left: 3rem;
+	margin-left: 5rem;
+	padding: 0;
+	width: 80%;
 }
 
 .text-container__text {
 	font-family: 'Roboto';
-	font-weight: 300;
+	font-weight: 100;
 	font-size: 2.4rem;
 	font-style: italic;
 	color: #999;
+	line-height: 3.6rem;
 }
 
 .cite-line {
@@ -1001,10 +1018,9 @@ h5 {
 	color: #f38181;
 }
 
-.map-sign {
-	height: 29rem;
-	width: 29rem;
-	background-image: url(../images/tenthpage-pics/icons/pin-map.png);
+.fa-map-marker {
+	font-size: 4rem;
+	color: #f38181;
 }
 
 /* page ten - footer */
@@ -1219,4 +1235,56 @@ h5 {
 
 .footer__sign a:hover {
 	color: #95e1d3;
+}
+
+/* slider bg-top */
+
+
+
+/* Hamburger */
+
+.toggle {
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	top: 2%;
+	right: 2%;
+	z-index: 3;
+	transform: translate(-2%, -2%);
+}
+
+.toggle__item {
+	display: block;
+	height: 4px;
+	width: 25px;
+	border-radius: 2px;
+	background-color: #f38181;
+	position: relative;
+	margin-bottom: 5px;
+	transition: transform 1s linear;
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+}
+
+/* .slide-1 {
+	width: 100%;
+} */
+
+.slick-prev  {
+	left: -75px;
+	background: url('../images/fifthpage-pics/icons/carrouselarrow-left.png') no-repeat center center;
+}
+
+.slick-next {
+	right: -75px;
+	background: url('../images/fifthpage-pics/icons/carrouselarrow-right.png') no-repeat center center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	content: '';
+}
+
+	.slick-prev:hover .slick-arrow {
+	background: #000;
 }

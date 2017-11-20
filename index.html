@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300i" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/style1200.css">
@@ -19,6 +23,11 @@
 						<a href="javascript:void(0)" class="logo__name">MoGo</a>
 					</div>
 					<div class="navigation">
+						<div class="toggle">
+							<span class="toggle__item down"></span>
+							<span class="toggle__item fades"></span>
+							<span class="toggle__item up"></span>
+						</div>
 						<nav class="nav">
 							<ul class="nav__container">
 							  <li class="nav__item item" ><a class="nav__link" href="#about-us">about</a></li>
@@ -29,8 +38,12 @@
 							</ul>
 						</nav>
 						<div class="head__icons icons">
-							<a href="javascript:void(0)" class="icons__link"><i class="icons__pic icons__pic--cart"></i></a>
-							<a href="javascript:void(0)" class="icons__link"><i class="icons__pic icons__pic--search"></i></a>
+							<a href="javascript:void(0)" class="icons__link icons__link--chart">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</a>
+							<a href="javascript:void(0)" class="icons__link">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 				</header>
@@ -46,6 +59,11 @@
 						<a href="javascript:void(0)" class="button__link" role="button">learn more</a>
 					</div>
 				</section>
+				<div class="top-slider">
+					<div class="top-slider__item item--1"></div>
+					<div class="top-slider__item item--2"></div>
+					<div class="top-slider__item item--3"></div>
+				</div>
 				<div class="list__backgrounds standart-width">
 					<ul class=" list__container">
 						<li class="list__part part">
@@ -66,6 +84,7 @@
 						</li>
 					</ul>
 				</div>
+				
 			</section>
 			<section id="about-us" class="section">
 				<div class="page-title standart-width">
@@ -258,10 +277,10 @@
 				</div>
 				<section class="section section--fullwidth">
 					<div class="quote__container standart-width">
-						<a href=""><i class="effect__icon quote__left-ar"></i></a>
+						<div class="slide-1">
 							<div class="quote__block">
 								<div class="quote__pic-cont">
-									<i class="effect__icon quote__sign"></i>
+									<i class="fa fa-comments" aria-hidden="true"></i>
 								</div>
 								<blockquote class="quote__text-container text-container">
 									<p class="text-container__text"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
@@ -270,7 +289,39 @@
 									</div>
 								</blockquote>
 							</div>
-						<a href=""><i class="effect__icon quote__right-ar"></i></a>
+						</div>
+						<div class="slide-1">
+							<div class="quote__block">
+								<div class="quote__pic-cont">
+									<i class="fa fa-comments" aria-hidden="true"></i>
+								</div>
+								<blockquote class="quote__text-container text-container">
+									<p class="text-container__text">
+										<q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor adipsing.	</q>
+									</p>
+									<div class="cite-line">
+										<cite class="text-container__author">Matthew Dix</cite>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="slide-1">
+							<div class="quote__block">
+								<div class="quote__pic-cont">
+									<i class="fa fa-comments" aria-hidden="true"></i>
+								</div>
+								<blockquote class="quote__text-container text-container">
+									<p class="text-container__text">
+										<q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											Ut enim ad minim veniam, quis nostrud exercitation.</q>
+									</p>
+									<div class="cite-line">
+										<cite class="text-container__author">Christopher Campbell</cite>
+									</div>
+								</blockquote>
+							</div>	
+						</div>
 					</div>
 				</section>
 			</section>
@@ -420,9 +471,9 @@
 				</div>
 				<section class="section section--fullwidth section--fullwidthwhite no-onmobile">
 					<div class="quote__container standart-width">
-						<a href=""><i class="effect__icon quote__left-ar"></i></a>
+						<!-- <a href=""><i class="effect__icon quote__left-ar"></i></a> -->
 							<div class="quote__block">
-									<img src="images/seventhpage-pics/pics/maninhat.jpg" alt="maninhat" class="img__maninhat">
+								<img src="images/seventhpage-pics/pics/maninhat.jpg" alt="maninhat" class="img__maninhat">
 								<blockquote class="quote__text-container text-container">
 									<p class="text-container__text"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q></p>
 									<div class="cite-line">									
@@ -430,7 +481,7 @@
 									</div>
 								</blockquote>
 							</div>
-						<a href=""><i class="effect__icon quote__right-ar"></i></a>
+						<!-- <a href=""><i class="effect__icon quote__right-ar"></i></a> -->
 					</div>
 				</section>
 			</section>
@@ -555,7 +606,7 @@
 			</section>
 			<section class="section section--map">
 				<div class="page-title standart-width">
-					<i class="effect__icon map-sign"></i>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
 					<a href="javascript:void(0)"><p class="page-title__subheader page-title__subheader--red">open map</p></a>
 				</div>
 			</section>
@@ -637,6 +688,8 @@
 			</footer>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>

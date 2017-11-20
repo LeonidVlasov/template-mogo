@@ -1,5 +1,10 @@
 @media screen and (max-width: 960px) {
 
+	.top-slider__item {
+		height: 60rem;
+		width: 100vw;
+	}
+
 	.standart-width,
 	.result__container {
 		width: 90%;
@@ -11,5 +16,17 @@
 
 	.foto-block__text {
 		text-align: center;
+	}
+
+	.list__part {
+		font-size: 1.5rem;
+	}
+
+	.nav__link {
+		margin: 0 1rem;
+	}
+
+	.icons__link--chart {
+		margin: 0 2rem;
 	}
 }

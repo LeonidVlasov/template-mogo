@@ -89,4 +89,8 @@
 		display: none;
 	}
 
+	.toggle {
+		top: 3%;
+	}
+
 }
