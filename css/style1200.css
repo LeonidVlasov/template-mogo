@@ -1266,9 +1266,9 @@ h5 {
 	transform-origin: 0;
 }
 
-/* .slide-1 {
+.slide-1 {
 	width: 100%;
-} */
+}
 
 .slick-prev  {
 	left: -75px;
