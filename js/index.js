@@ -19,6 +19,13 @@ $(document).ready(function () {
     $('.quote__container').slick({
         autoplay: true,
         speed: 1000,
+        responsive: [{
+            breakpoint: 420,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
     $('.quote__container--fade').slick({

@@ -1262,10 +1262,10 @@ h5 {
 	display: none;
 	cursor: pointer;
 	position: fixed;
-	top: 3%;
-	right: 3%;
+	top: 2%;
+	right: 2%;
 	z-index: 3;
-	transform: translate(-3%, -3%);
+	transform: translate(-2%, -2%);
 }
 
 .toggle__item {
@@ -1273,7 +1273,7 @@ h5 {
 	height: 4px;
 	width: 25px;
 	border-radius: 2px;
-	background-color: #f38181;
+	background-color: #fce38a;
 	position: relative;
 	margin-bottom: 5px;
 	transition: transform 1s linear;

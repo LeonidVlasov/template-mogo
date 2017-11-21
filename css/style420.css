@@ -5,7 +5,7 @@
 	}
 
 	.head {
-		padding: 1rem 0;
+		padding: 0;
 	}
 
 	.welcome {
@@ -91,6 +91,25 @@
 
 	.toggle {
 		top: 3%;
+	}
+
+	.quote__pic-cont {
+		display: none;
+	}
+
+	.quote__container {
+		width: 100%;
+	}
+	.nav__link {
+		font-size: 4rem;
+	}
+
+	.head__icons {
+		margin-right: 4rem;
+	}
+
+	.icons__link--chart {
+		margin: 0 1rem;
 	}
 
 }
