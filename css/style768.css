@@ -105,15 +105,19 @@
 
 	.gallery-hoverffect__item {
 		display: block;
-		width: 100%;
+		width: 31%;
 		text-align: center;
 	}
 
 	.gallery-hoverffect__effect {
-		position: static;
+		position: absolute;
+		top: 80%;
+		left: 0;
+		bottom: 0;
 		visibility: visible;
 		transform: none;
 		opacity: 1;
+		transform: translate(0%, 0%);
 	}
 
 	.effect__icon--people {
@@ -247,8 +251,9 @@
 
 	.gallery-hoverffect__effect--modified {
 		display: flex;
-		flex-direction: row;
-		justify-content: center;
+		width: 100%;
+		justify-content: space-between;
+		background-color: rgba(255, 255, 255, 0.6);
 	}
 
 	.gallery-hoverffect__effect--modified a {
@@ -260,8 +265,8 @@
 		text-align: center;
 	}
 
-	.gallery-signs__name--ontab {
-		font-size: 3rem;
+	.gallery-signs__name {
+		font-size: 1.35rem;
 		height: auto;
 	}
 
@@ -269,8 +274,13 @@
 		margin-bottom: 5rem;
 	}
 
+	.gallery-hoverffect__effect--modified a {
+		margin: 0;
+	}
+
 	.team__effect  {
 		background-color: inherit;
+		padding: 2.5rem;
 	}
 
 	.partners {
@@ -291,11 +301,12 @@
 
 	.big-gallery {
 		flex-wrap: wrap;
-		padding: 5rem 0;
+		padding: 5rem 1rem;
 	}
 
 	.big-gallery__column {
 		width: 50%;
+		padding: 0.5rem;
 	}
 
 	.big-gallery__foto-block:after,
@@ -310,6 +321,10 @@
 	.list-of--modified {
 		width: 95%;
 		padding: 0;
+	}
+
+	.bot-margin {
+		margin-bottom: 0.5rem;
 	}
 
 	.img__maninhat {
@@ -382,27 +397,23 @@
 		margin-bottom: 0;
 	}
 
-	.no-ontab {
-		/* display: none; */
-	}
-
 	.form-group {
-		width: 50%;
+		width: 70%;
+		margin-right: 1rem;
 	}
 
 	.footer__input {
-		padding: 0;
+		padding: 1rem;
+	}
+
+	.navbar-form .form-control {
+		width: 100%;
 	}
 
 	.logo__name--grey {
 		text-align: center;
 	}
 
-
-	.gallery-hoverffect--ontab {
-		flex-direction: column;
-	}
-	
 	.gallery-hoverffect__item:nth-child(2) {
 		margin-left: 0;
 		margin-right: 0;
@@ -481,6 +492,14 @@
 
 	.logo__name--grey:hover {
 		color: #ccc;
+	}
+
+	.effect--ontab {
+		position: static;
+		visibility: visible;
+		transform: none;
+		opacity: 1;
+		margin-top: 1rem;
 	}
 /* burger lines animatiton */
 

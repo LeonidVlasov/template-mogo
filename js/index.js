@@ -20,7 +20,7 @@ $(document).ready(function () {
         autoplay: true,
         speed: 1000,
         responsive: [{
-            breakpoint: 420,
+            breakpoint: 419,
                 settings: {
                     arrows: false,
                 }

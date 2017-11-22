@@ -42,4 +42,8 @@
 	.slick-next {
 		right: -30px;
 	}
+
+	.gallery-signs__item {
+		padding: 2rem;
+	}
 }

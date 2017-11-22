@@ -317,11 +317,16 @@ h5 {
 
 .gallery-hoverffect__item {
 	width: 33%;
+	/* position: relative; */
+	
+}
+
+.gallery__foto-box {
 	position: relative;
 	transition: 0.7s;
 }
 
-.gallery-hoverffect__item:after {
+	.gallery__foto-box:after {
 	visibility: hidden;
 	position: absolute;
 	top: 50%;
@@ -335,12 +340,12 @@ h5 {
 	border-radius: 100%;
 }
 
-.gallery-hoverffect__item:hover {
+.gallery__foto-box:hover {
   transform: translate(-0.1rem, -0.1rem);
   box-shadow: 1rem 1rem 0rem 0rem rgba(130,252,255,1);
 }
 
-.gallery-hoverffect__item:hover:after {
+.gallery__foto-box:hover:after {
   visibility: visible;
   opacity: 1;
   top: 0;
@@ -358,10 +363,6 @@ h5 {
 	margin: 0 2rem;
 }
 
-.only-ontab {
-	display: none;
-}
-
 .gallery-hoverffect__effect {
 	opacity: 0;
 	flex-direction: column;
@@ -373,10 +374,15 @@ h5 {
  	z-index: 99;
 }
 
-.gallery-hoverffect__item:hover .gallery-hoverffect__effect {
+.gallery__foto-box:hover .gallery-hoverffect__effect {
   display: flex;
   opacity: 1;
   transition: opacity 0.7s;
+}
+
+.gallery-signs__item {
+	padding: 3rem;
+	text-align: center;
 }
 
 .effect__icon {
@@ -708,10 +714,10 @@ h5 {
 	font-family: 'Montserrat';
 	font-size: 1.4rem;
 	text-transform: uppercase;
-	height: 5rem;
 	color: #333;
 	margin: 0;
 	text-align: center;
+	line-height: 2;
 }
 
 .gallery-signs__position {
@@ -1309,3 +1315,6 @@ h5 {
 .slick-prev:hover {
 	background: url('../images/fifthpage-pics/icons/carrouselarrow-left.png') no-repeat center center;
 }
+
+/*  */
+

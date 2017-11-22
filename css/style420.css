@@ -73,12 +73,12 @@
 		margin-bottom: 2rem;
 	}
 
-	.no-onmobile {
-		display: none;
-	}
-
 	.services {
 		padding: 3rem 0;
+	}
+
+	.big-gallery__column {
+		width: 100%;
 	}
 
 	.partners a {
@@ -100,16 +100,39 @@
 	.quote__container {
 		width: 100%;
 	}
+
+	.blog-gallery__date {
+		left: 0.5rem;
+		bottom: 0.5rem;
+	}
+
 	.nav__link {
 		font-size: 4rem;
 	}
 
-	.head__icons {
-		margin-right: 4rem;
-	}
-
 	.icons__link--chart {
 		margin: 0 1rem;
+	}
+
+	.socials__icons {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.footer__follow-us {
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+
+	.head__icons,
+	.bot-carousel,
+	.no-ontab {
+		display: none;
+	}
+	
+	.navigation {
+		display: block;
+		top: 0;
 	}
 
 }
