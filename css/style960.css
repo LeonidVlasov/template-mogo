@@ -1,48 +1,37 @@
 @media screen and (max-width: 960px) {
-
 	.top-slider__item {
 		height: 100vh;
 		width: 100vw;
 	}
-
 	.standart-width,
 	.result__container {
 		width: 90%;
 	}
-
 	.section {
 		padding: 5rem 0;
 	}
-
 	.foto-block__text {
 		text-align: center;
 	}
-
 	.list__part {
 		font-size: 1.5rem;
 	}
-
 	.nav__link {
 		margin: 0 1rem;
 	}
-
 	.icons__link--chart {
 		margin: 0 2rem;
 	}
-
 	.quote__container,
 	.quote__container--fade {
 		width: 80%;
 	}
-
 	.slick-prev {
 		left: -50px;
 	}
-
 	.slick-next {
 		right: -30px;
 	}
-
 	.gallery-signs__item {
 		padding: 2rem;
 	}
